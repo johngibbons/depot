@@ -1,6 +1,6 @@
-if ($("#cart tr").length == 1) {
-  $('#cart').show('blind', 1000);
-}
+if ($('#cart tr').length == 1) { $('#cart').show(); }
+
+if ($('#cart tr').length ==0) {$('#cart').hide();}
 
 $("#cart").html("<%= escape_javascript render(@cart) %>");
 
